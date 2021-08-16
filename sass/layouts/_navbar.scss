@@ -1,0 +1,112 @@
+@import url("https://fonts.googleapis.com/css2?family=Lora:wght@400;500;600;700&family=Merriweather:wght@300;400;700;900&display=swap");
+
+.navigation {
+  margin-top: 10px;
+  position: fixed;
+  margin-bottom: 1.6rem;
+  z-index: 1000;
+
+  nav {
+    position: absolute;
+    display: flex;
+  }
+  .nav-links {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
+  .nav-item {
+    a {
+      font-family: "Merriweather", sans-serif;
+      margin-left: 30px;
+      text-decoration: none;
+      color: white;
+    }
+  }
+  .menu-icon {
+    font-size: 2.5rem;
+    margin-top: 10px;
+    color: white;
+    &:hover {
+      opacity: 0.5;
+      transition: 0.4s;
+    }
+  }
+  .navbar span {
+    display: flex;
+    justify-content: flex-end;
+  }
+
+  .sticky {
+    position: fixed;
+    top: 2.5rem;
+    right: 3.2rem;
+  }
+
+  // OPEN-CLOSE MENÜ //
+
+  .nav-sidebar ul {
+    overflow: hidden;
+    visibility: hidden;
+  }
+  .nav-sidebar ul li {
+    list-style: none;
+  }
+  .btn-toggle-nav {
+    text-decoration: none;
+  }
+  .nav-sidebar ul li span,
+  .nav-sidebar ul li a {
+    font-family: "Merriweather", sans-serif;
+    font-weight: 100;
+    display: flex;
+    font-size: 20px;
+    line-height: 60px;
+    text-decoration: none;
+    text-transform: uppercase;
+    color: #fff;
+    white-space: nowrap;
+    opacity: 0;
+    transition: all 1s ease-in-out;
+  }
+
+  .nav-sidebar {
+    width: calc(0% - 100%);
+    background-color: rgba(27, 26, 26, 0.618);
+    border-radius: 0.8rem;
+    z-index: 1000;
+    transition: all 1s ease-in-out;
+    max-width: 65%;
+  }
+
+  .nav-item:active,
+  .nav-item:hover {
+    opacity: 0.5;
+  }
+  .links {
+    cursor: pointer;
+  }
+}
+@include tablet_screen {
+  .navigation {
+    .nav-sidebar {
+      max-width: 35%;
+      ul li a {
+        line-height: 40px;
+      }
+    }
+  }
+}
+
+@include desktop_screen {
+  .navigation {
+    .nav-links {
+      flex-direction: row;
+    }
+    .nav-sidebar {
+      max-width: 72%;
+    }
+  }
+}

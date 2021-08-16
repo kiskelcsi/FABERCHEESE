@@ -1,0 +1,109 @@
+@import url("https://fonts.googleapis.com/css2?family=Lora:wght@400;500;600;700&family=Merriweather:wght@300;400;700;900&display=swap");
+
+.logo {
+  display: flex;
+  position: relative;
+  height: 95px;
+  top: 10px;
+  left: 30%;
+}
+
+.header {
+  height: 570px;
+  width: 375px;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url(/src/images/faber-main-min.png);
+  background-attachment: initial;
+  background-size: cover;
+  background-position: center;
+  font-family: "Merriweather", sans-serif;
+  position: relative;
+  clip-path: polygon(
+    5% 0,
+    95% 0,
+    100% 5%,
+    100% 95%,
+    95% 100%,
+    5% 100%,
+    0 95%,
+    0 5%
+  );
+  margin-top: 8px;
+  margin-bottom: 16px;
+  .text-box {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, 0%);
+    text-align: center;
+    z-index: -1;
+    .heading-primary {
+      color: rgb(225, 224, 224);
+      text-transform: uppercase;
+      backface-visibility: hidden;
+      padding-left: 2rem;
+      .heading-primary-main {
+        display: block;
+        font-size: 26px;
+        font-weight: 300;
+        letter-spacing: 15px;
+        animation: moveInLeft 2s ease-out;
+      }
+      .heading-primary-sub {
+        display: block;
+        font-size: 15px;
+        font-weight: 300;
+        letter-spacing: 7px;
+        animation: moveInRight 2s ease-out;
+      }
+    }
+  }
+}
+/* HEADING */
+
+@include tablet_screen {
+  .header {
+    height: 360px;
+    width: 810px;
+    .text-box {
+      .heading-primary {
+        .heading-primary-main {
+          font-size: 50px;
+          font-weight: 100;
+          letter-spacing: 30px;
+        }
+        .heading-primary-sub {
+          font-size: 17px;
+          font-weight: 100;
+          letter-spacing: 15px;
+        }
+      }
+    }
+  }
+  .logo {
+    top: 10px;
+    left: 10px;
+  }
+}
+
+@include desktop_screen {
+  .header {
+    height: 610px;
+    width: 98vw;
+    margin-left: 5px;
+    .text-box {
+      .heading-primary {
+        .heading-primary-main {
+          font-size: 60px;
+          font-weight: 100;
+          letter-spacing: 35px;
+        }
+        .heading-primary-sub {
+          font-size: 20px;
+          font-weight: 100;
+          letter-spacing: 17.5px;
+        }
+      }
+    }
+  }
+}

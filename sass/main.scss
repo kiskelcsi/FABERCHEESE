@@ -1,0 +1,11 @@
+@import "abstracts/variables";
+@import "abstracts/mixins";
+@import "base/reset";
+@import "layouts/navbar";
+@import "layouts/header";
+@import "layouts/footer";
+@import "layouts/sectionme";
+
+body {
+  background-color: black;
+}
