@@ -253,9 +253,9 @@ html {
   left: 30%; }
 
 .header {
-  height: 570px;
+  height: 680px;
   width: 100vw;
-  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(./src/images/faber-main-min.png);
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../../assets/images/faber-main-min.png);
   background-attachment: initial;
   background-size: cover;
   background-position: center;
@@ -292,8 +292,7 @@ html {
 /* HEADING */
 @media all and (min-width: 600px) {
   .header {
-    height: 360px;
-    width: 810px; }
+    height: 360px; }
     .header .text-box .heading-primary .heading-primary-main {
       font-size: 50px;
       font-weight: 100;
@@ -392,9 +391,9 @@ footer {
 /* SECTION ABOUT ME */
 .section__me {
   width: 100vw;
-  height: 1420px;
+  height: 1430px;
   background-color: white;
-  background-image: linear-gradient(rgba(255, 255, 255, 0.797), rgba(255, 255, 255, 0.756)), url(/src/images/blacknwhite-min.png);
+  background-image: linear-gradient(rgba(255, 255, 255, 0.797), rgba(255, 255, 255, 0.756)), url(../../assets/images/blacknwhite-min.png);
   background-attachment: initial;
   background-size: cover;
   background-position: center;
@@ -433,14 +432,15 @@ footer {
     grid-row-start: 4;
     grid-row-end: 5;
     grid-column-start: 1;
-    grid-column-end: 5; }
+    grid-column-end: 5;
+    margin-bottom: 15px; }
   .section__me .par_me {
-    font: bold;
     line-height: 20px;
     font-size: 16px;
     margin: 3px 10px 3px 10px;
     text-align: center; }
     .section__me .par_me .strong_word {
+      font-weight: 500;
       font-size: 24px; }
   .section__me .fotos {
     height: 170px;
@@ -495,7 +495,51 @@ footer {
     display: flex;
     justify-content: center; }
   .section__me .img_heigth {
-    height: 171px; }
+    height: 170px; }
+
+@media all and (min-width: 600px) {
+  .section__me {
+    margin-left: 4px;
+    margin-right: 4px;
+    grid-gap: 0;
+    height: 950px;
+    grid-template-rows: repeat(7, 1fr);
+    grid-template-columns: repeat(4, 1fr); }
+    .section__me .fotos {
+      grid-row: 5 / 6;
+      grid-column: 1 / 2;
+      justify-content: center; }
+    .section__me .soros {
+      grid-row: 5 / 6;
+      grid-column: 2 / 3;
+      justify-content: center; }
+    .section__me .koccintos {
+      grid-row: 5 / 6;
+      grid-column: 3 / 4;
+      justify-content: center; }
+    .section__me .melo1 {
+      grid-row: 5 / 6;
+      grid-column: 4 / 5;
+      justify-content: center; }
+    .section__me .melo2 {
+      grid-row: 6 / 7;
+      grid-column: 1 / 3;
+      margin-top: 3px;
+      justify-content: center; }
+    .section__me .piknik {
+      grid-row: 6 / 7;
+      grid-column: 2 / 4;
+      margin-top: 3px;
+      display: flex;
+      justify-content: center; }
+    .section__me .talalas {
+      grid-row: 6 / 7;
+      grid-column: 3 / 5;
+      margin-top: 3px;
+      justify-content: center; }
+    .section__me .img_heigth {
+      height: 166px;
+      width: 188px; } }
 
 body {
   background-color: black; }
