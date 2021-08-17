@@ -196,4 +196,84 @@
 }
 
 @include desktop_screen {
+  .section__me {
+    height: 1010px;
+    width: 98vw;
+    grid-template-rows: repeat(5, 1fr);
+    grid-template-columns: repeat(5, 1fr);
+    .par_me {
+      line-height: 30px;
+      font-size: 20px;
+      margin: 3px 10px 3px 10px;
+      text-align: center;
+      .strong_word {
+        font-weight: 500;
+        font-size: 30px;
+      }
+    }
+    .prof__pic {
+      grid-column: 1 / 6;
+    }
+
+    .description_me1 {
+      grid-row: 2 / 3;
+      grid-column: 1 / 4;
+      justify-content: center;
+    }
+    .description_me2 {
+      grid-row: 3 / 4;
+      grid-column: 1 / 4;
+      justify-content: center;
+    }
+    .description_me3 {
+      grid-row: 4 / 5;
+      grid-column: 1 / 4;
+      justify-content: center;
+    }
+
+    .fotos {
+      grid-row: 2 / 3;
+      grid-column: 4 / 5;
+      justify-content: flex-end;
+    }
+    .soros {
+      grid-row: 2 / 3;
+      grid-column: 5 / 6;
+      justify-content: flex-start;
+    }
+    .koccintos {
+      grid-row: 3 / 4;
+      grid-column: 4 / 5;
+      justify-content: flex-end;
+    }
+    .melo1 {
+      grid-row: 3 / 4;
+      grid-column: 5 / 6;
+      justify-content: flex-start;
+    }
+    .melo2 {
+      grid-row: 4 / 5;
+      grid-column: 4 / 5;
+      margin-top: 3px;
+      justify-content: flex-end;
+    }
+    .piknik {
+      grid-row: 4 / 5;
+      grid-column: 5 / 6;
+      margin-top: 3px;
+      display: flex;
+      justify-content: flex-start;
+    }
+    .talalas {
+      grid-row: 5 / 6;
+      grid-column: 4 / 6;
+      margin-top: 3px;
+      justify-content: center;
+      margin-bottom: 40px;
+    }
+    .img_heigth {
+      height: 202px;
+      width: 218px;
+    }
+  }
 }

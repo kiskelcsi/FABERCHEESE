@@ -541,5 +541,70 @@ footer {
       height: 166px;
       width: 188px; } }
 
+@media all and (min-width: 1200px) {
+  .section__me {
+    height: 1010px;
+    width: 98vw;
+    grid-template-rows: repeat(5, 1fr);
+    grid-template-columns: repeat(5, 1fr); }
+    .section__me .par_me {
+      line-height: 30px;
+      font-size: 20px;
+      margin: 3px 10px 3px 10px;
+      text-align: center; }
+      .section__me .par_me .strong_word {
+        font-weight: 500;
+        font-size: 30px; }
+    .section__me .prof__pic {
+      grid-column: 1 / 6; }
+    .section__me .description_me1 {
+      grid-row: 2 / 3;
+      grid-column: 1 / 4;
+      justify-content: center; }
+    .section__me .description_me2 {
+      grid-row: 3 / 4;
+      grid-column: 1 / 4;
+      justify-content: center; }
+    .section__me .description_me3 {
+      grid-row: 4 / 5;
+      grid-column: 1 / 4;
+      justify-content: center; }
+    .section__me .fotos {
+      grid-row: 2 / 3;
+      grid-column: 4 / 5;
+      justify-content: flex-end; }
+    .section__me .soros {
+      grid-row: 2 / 3;
+      grid-column: 5 / 6;
+      justify-content: flex-start; }
+    .section__me .koccintos {
+      grid-row: 3 / 4;
+      grid-column: 4 / 5;
+      justify-content: flex-end; }
+    .section__me .melo1 {
+      grid-row: 3 / 4;
+      grid-column: 5 / 6;
+      justify-content: flex-start; }
+    .section__me .melo2 {
+      grid-row: 4 / 5;
+      grid-column: 4 / 5;
+      margin-top: 3px;
+      justify-content: flex-end; }
+    .section__me .piknik {
+      grid-row: 4 / 5;
+      grid-column: 5 / 6;
+      margin-top: 3px;
+      display: flex;
+      justify-content: flex-start; }
+    .section__me .talalas {
+      grid-row: 5 / 6;
+      grid-column: 4 / 6;
+      margin-top: 3px;
+      justify-content: center;
+      margin-bottom: 40px; }
+    .section__me .img_heigth {
+      height: 202px;
+      width: 218px; } }
+
 body {
   background-color: black; }
