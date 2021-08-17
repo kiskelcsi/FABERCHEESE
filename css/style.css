@@ -255,7 +255,7 @@ html {
 .header {
   height: 680px;
   width: 100vw;
-  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../../assets/images/faber-main-min.png);
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../assets/images/faber-main-min.png);
   background-attachment: initial;
   background-size: cover;
   background-position: center;
@@ -393,7 +393,7 @@ footer {
   width: 100vw;
   height: 1430px;
   background-color: white;
-  background-image: linear-gradient(rgba(255, 255, 255, 0.797), rgba(255, 255, 255, 0.756)), url(../../assets/images/blacknwhite-min.png);
+  background-image: linear-gradient(rgba(255, 255, 255, 0.797), rgba(255, 255, 255, 0.756)), url(../assets/images/blacknwhite-min.png);
   background-attachment: initial;
   background-size: cover;
   background-position: center;
